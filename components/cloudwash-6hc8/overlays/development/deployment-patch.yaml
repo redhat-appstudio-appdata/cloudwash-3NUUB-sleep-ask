@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: cloudwash-6hc8
+  namespace: psrna-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:4e6a66eab5e708f5113732cddf4c71e225124c271d5f6f414d95364ebabcb601
+        name: my-python
+        resources: {}
+status: {}
