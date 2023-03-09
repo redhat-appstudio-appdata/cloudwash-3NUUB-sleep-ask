@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: cloudwash-6hc8
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: cloudwash-6hc8
+    app.kubernetes.io/part-of: cloudwash
+  name: cloudwash-6hc8
+  namespace: psrna-tenant
+spec:
+  ports:
+  - port: 8081
+    targetPort: 8081
+  selector:
+    app.kubernetes.io/instance: cloudwash-6hc8
+status:
+  loadBalancer: {}
