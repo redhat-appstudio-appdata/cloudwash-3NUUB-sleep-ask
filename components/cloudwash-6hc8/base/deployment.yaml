@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: cloudwash-6hc8
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:3NUUB-cloudwash-6hc8
+      - image: quay.io/redhat-appstudio/user-workload@sha256:4e6a66eab5e708f5113732cddf4c71e225124c271d5f6f414d95364ebabcb601
         name: my-python
         ports:
         - containerPort: 8081
